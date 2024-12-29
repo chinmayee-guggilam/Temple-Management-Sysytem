@@ -1,0 +1,12 @@
+<form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="flex">
+    <div class="login color">LOGIN</div>
+    <label class="color">USERNAME :</label>
+    <input type="text" formControlName="username" class="input">
+    <label class="color">PASSWORD :</label>
+    <input type="password" formControlName="password" class="input"> 
+    <button class="btn" type="submit">LOGIN</button>
+    <br>
+    <div class="color align">Don't have account? <span class="span"><a routerLink="/register">Register Here</a></span></div>
+  </div>
+</form>

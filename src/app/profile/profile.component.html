@@ -1,0 +1,19 @@
+<div class="profile-container">
+  <h1 class="title">SQL Table Data</h1>
+  <table class="data-table" border="1">
+    <thead class="table-header t1">
+      <tr>
+        <th class="table-header-cell">username</th>
+        <th class="table-header-cell">password</th>
+        <th class="table-header-cell">email</th>
+      </tr>
+    </thead>
+    <tbody class="table-body">
+      <tr *ngFor="let row of data" class="table-row">
+        <td class="table-cell">{{ row.username }}</td>
+        <td class="table-cell">{{ row.password }}</td>
+        <td class="table-cell">{{ row.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

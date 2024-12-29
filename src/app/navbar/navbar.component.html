@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<nav class="navbar" style="display: flex; justify-content: flex-end;">
+  <!-- <a routerLink="/" class="logo">
+    <img src="https://cdn.pixabay.com/photo/2023/05/13/13/45/increase-arrow-7990565_1280.png" alt="Logo" class="logo-image">
+  </a> -->
+  <div class="nav-links">
+    <ul class="nav-links">
+      <li><a routerLink="/">HOME</a></li>
+      <li><a routerLink="/login">LOGIN</a></li>
+      <li><a routerLink="/contact">CONTACT US</a></li>
+      <li><a routerLink="/pooja">POOJA</a> </li>
+      <li><a routerLink="/about">ABOUT US</a></li>
+      <li><a routerLink="/data">DATA</a></li>
+      <li><a routerLink="/overview">OVERVIEW</a></li>
+      <li><a routerLink="/register">REGISTER</a></li> 
+      <li><a routerLink="/logout">LOGOUT</a></li>
+    </ul>
+  </div>
+  <!-- <div class="search-container">
+    <input type="text" placeholder="Search businesses..." class="search-bar">
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+  </div> -->
+  <div class="profile-container" (click)="toggleProfileMenu()">
+    <div class="profile-icon">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="profile-menu" *ngIf="isProfileMenuOpen">
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/contact">Contact Us</a></li>
+        <li><a routerLink="/pooja">Pooja</a></li>
+        <li><a routerLink="/about">About Us</a></li>
+        <li><a routerLink="/data">Data</a></li>
+        <li><a routerLink="/overview">Overview</a></li>
+        <li><a routerLink="/register">Registration</a></li>
+        <li><a routerLink="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

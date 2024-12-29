@@ -1,0 +1,78 @@
+.container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 200px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some spacing between sections */
+h2 {
+  margin-top: 40px;
+}
+
+/* Style the images in the gallery */
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery figure {
+  margin: 10px;
+}
+
+.gallery img {
+  max-width: 200px;
+  height: 150px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Style the images in the gallery */
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
